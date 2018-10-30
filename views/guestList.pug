@@ -1,0 +1,19 @@
+html
+    head      
+        title="Guest List"
+
+    body
+        h1="Guest List"
+
+        h3="Attending"
+        ul
+            each val in attending
+                li = `${val.name}`
+                li = `${reservation.name}`
+                li = `${val.numberOfGuests}`
+                li = `${reservation.numberOfGuests}
+        
+        h3="Not Attending"
+            each val in notaAtending
+                li = `${val.name}`
+                li = `${reservtion.name}`
