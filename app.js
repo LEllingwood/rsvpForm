@@ -8,6 +8,7 @@ let mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/test")
 
 let database = mongoose.connection
+// should the line above be let klack = mongoose.connection?
 
 database.on("error", console.error.bind(console, "Connection Error"));
 database.once("open", () => {
